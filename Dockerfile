@@ -1,6 +1,6 @@
 FROM node:14
 
-ENV PORT 3001
+ENV PORT 3002
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -15,7 +15,7 @@ COPY . /usr/src/app
 
 # Building app
 RUN npm run build
-EXPOSE 3001
+EXPOSE 3002
 
 # Running the a pp
 CMD "npm" "run" "start"
